@@ -51,4 +51,6 @@ export const typeDefs = gql`
     CHILE
   }
 `;
-// for age: Int! in CreateUserInput, if age were an optional field, we could have chosen not to pass age while mutating or we could have passed a default value if nothing was passed like age: Int = 18. That is why using input is helpful
+// why using input is helpful
+// 1. if you don't want a particular field as argument, you can choose not to add it in the input
+// for age: Int! in CreateUserInput, if age were an optional field, we could have chosen not to pass age while mutating or we could have passed a default value if nothing was passed like age: Int = 18
