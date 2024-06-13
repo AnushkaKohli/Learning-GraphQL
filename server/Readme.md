@@ -87,4 +87,16 @@ mutation DeleteUser($deleteUserId: ID!) {
 //     deleteUserId: 1
 // }
 
+// We can also combine multiple queries in one query and fetch both users and movies
+query GetUsersAndGetMovies{
+  users {
+    id
+    name
+  }
+  movies {
+    title
+    year
+  }
+}
+
 ```
